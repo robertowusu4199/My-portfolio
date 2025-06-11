@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components; 
+@tailwind utilities;
+
+
+/*------------------------------------------------------*\
+ *BASE
+\*------------------------------------------------------*/
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  
+body {
+  @apply bg-zinc-900 text-zinc-50
+}
+
+
+.section {
+  @apply pt-20 
+}
+
+
+/*------------------------------------------------------*\
+ *TYPOGRAPHY
+\*------------------------------------------------------*/
+
+/* .headline-1 {
+  @apply text-5xl leading-tight font-semibold lg:text-[55px] 
+  lg:leading-[1.15]
+} */
+
+/* .headline-4 {
+  @apply text-5xl leading-tight font-semibold lg:text-[20px] 
+  lg:leading-[1.5]
+} */
+
+
+/*------------------------------------------------------*\
+ *cOMPONENTS
+\*------------------------------------------------------*/
+
+/* Navbar */
+
+.navbar {
+  @apply flex space-x-8 /*or gap-4*/ top-full mt-2 right-0 min-w-40 p-2 justify-center
+  bg-zinc-50/10 rounded-2xl ring-inset ring-1 ring-zinc-50/5 
+} 
+
+.nav-link {
+  @apply text-zinc-300 hover:text-zinc-50/50 focus:text-orange-700
+  active:text-orange-700 transition-colors
+} 
